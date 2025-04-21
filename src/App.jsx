@@ -13,13 +13,13 @@ function App() {
   const [language, setLanguage] = useState("id");
 
   return (
+    
     <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
-      <Home name="Muhammad Taufiq Rahman Hakim" />  
       <Navbar language={language} setLanguage={setLanguage} />
       
       <div className="flex-grow">
         <Routes>
-        <Route path="/" element={<Home language={language} />} />
+        <Route path="/" element={<Home name={"Muhammad Taufiq Rahman Hakim"} language={language} />} />
         <Route path="/about" element={<About language={language} />} />
           <Route path="/projects" element={<Projects language={language} />} />
           <Route path="/contact" element={<Contact language={language} />} />
