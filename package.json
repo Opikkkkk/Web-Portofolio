@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://Opikkkkk.github.io/Web-Portfolio",
-    "scripts": {
+  "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
