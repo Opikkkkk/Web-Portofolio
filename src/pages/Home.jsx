@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const Home = ({ name }) => {
   const [likes, setLikes] = useState(0);
   const [liked, setLiked] = useState(false);
 
@@ -27,10 +27,10 @@ const Home = () => {
       <div className="w-full md:w-1/2 text-center md:text-left px-4">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight font-sans">
           Halo, saya{" "}
-          <span className="text-blue-600">Muhammad Taufiq Rahman Hakim</span>
+          <span className="text-blue-600">{name}</span>
         </h1>
         <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed font-serif">
-          Perkenalkan nama saya Muhammad Taufiq Rahman Hakim, seorang mahasiswa
+          Perkenalkan nama saya {name}, seorang mahasiswa
           Institut Teknologi Nasional Bandung yang sedang menempuh pendidikan di
           jurusan Informatika. Saya memiliki ketertarikan yang besar dalam dunia
           teknologi dan pengembangan perangkat lunak.

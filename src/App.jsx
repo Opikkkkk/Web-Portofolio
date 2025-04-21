@@ -14,6 +14,7 @@ function App() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
+      <Home name="Muhammad Taufiq Rahman Hakim" />  
       <Navbar language={language} setLanguage={setLanguage} />
       
       <div className="flex-grow">
